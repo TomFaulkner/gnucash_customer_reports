@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gnucash_customer_reports"
+version = "0.1.0"
+description = ""
+authors = ["Tom Faulkner <faulkner@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Jinja2 = "^2.11.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gcr = "gcr:main"
