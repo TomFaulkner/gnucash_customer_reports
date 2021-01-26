@@ -1,0 +1,22 @@
+<title>{{ name }}</title>
+<h1>Calhoun Presbyterian Church</h1>
+<h2>Records of Tithes and Offerings</h2>
+<p>Member Name: {{ name }}.</b></p>
+<table>
+  <th>Date</th><th>Check Number</th><th>Amount</th>
+{% for instance in instances %}
+  <tr>
+   <td>{{ instance.date }}</td>
+   <td><center>{{ instance.number }}<center></td>
+   <td style="text-align: right">${{ instance.amount }}</td>
+  </tr>
+{% endfor %}
+<tr><tfoot><td><b>Total:</b></td><td /><td> <b> ${{ total }}</b></td></tfoot></tr>
+</table>
+<br><br>
+Thank you for your generousity.
+<br><br><br><br><br><br>
+
+
+Tom Faulkner <br>
+Treasurer, <br> Calhoun Presbyterian Church
